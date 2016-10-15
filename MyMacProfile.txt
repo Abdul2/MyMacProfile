@@ -1,0 +1,55 @@
+    
+  # brew
+    
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+    
+brew update
+
+# git
+  
+brew install git
+
+
+# lastpass
+    
+brew cask install lastpass
+cd  /usr/local/Caskroom/lastpass/latest/
+Open LastPass\ Installer.app/
+    
+
+# sublime 
+   
+brew cask install sublime-text
+   
+ #dropbox
+ brew cask install --appdir="/Applications" dropbox 
+  
+ # viv
+ 
+ brew install vim --with-luajit 
+
+#slack
+
+brew cask install slack
+
+# quick silver
+
+brew cask install --appdir="/Applications" quicksilver
+
+#wget
+
+brew install wget
+
+#markdown
+brew cask install mou
+
+#oh myzh
+brew install zsh
+sudo -s 'echo /usr/local/bin/zsh >> /etc/shells' && chsh -s /usr/local/bin/zsh
+
+
+utilities=(node tree unrar watch wget curl docker vagrant virtualbox)
+brew install ${utilities[@]}
+brew cleanup
+
